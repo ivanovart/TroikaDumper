@@ -130,7 +130,7 @@ public class Dump {
                 (byte)(data[1][8]  & 0b00001111),
                 (byte) data[1][9], //  87654321
                 (byte)(data[1][10] & 0b11111000)
-        ) / 200;
+        ) / 25;
     }
 
     public void write(Tag tag) throws IOException {
