@@ -6,8 +6,6 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     signingConfigs {
-        config {
-        }
     }
     compileSdkVersion 28
     defaultConfig {
@@ -22,10 +20,8 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.config
         }
         debug {
-            signingConfig signingConfigs.config
         }
     }
     productFlavors {
